@@ -1,6 +1,6 @@
 # ML Learning Notebook Creator
 
-Create a new educational Jupyter notebook on the topic: $ARGUMENTS
+Create a new educational Jupyter notebook on the topic: $ARGUMENTS, you should only work on this file as there may be other notebooks in progress.
 
 ## Goal
 

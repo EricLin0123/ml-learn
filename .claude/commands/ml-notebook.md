@@ -4,7 +4,9 @@ Create a new educational Jupyter notebook on the topic: $ARGUMENTS, you should o
 
 ## Goal
 
-Build a self-contained, beginner-friendly notebook that teaches `$ARGUMENTS` from first principles using math, code, and visualizations. The structure and content must be driven by what makes sense for the topic — not forced into a fixed template.
+Build a self-contained, beginner-friendly notebook that teaches `$ARGUMENTS` from first principles using math, code, and visualizations. The structure and content must be driven by what makes sense for the topic — not forced into a fixed template. When explaining mathematical concepts, use the same tone and style as Youtuber Statquest or 3Blue1Brown.
+
+Also, when writing math equations, please add intuitive explanations or analogies to help the reader better understand what each term represents and how it contributes to the overall concept
 
 ---
 

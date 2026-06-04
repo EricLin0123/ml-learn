@@ -1,8 +1,10 @@
 # ML Learning Notebook Creator
 
-Create a new educational Jupyter notebook on the topic: $ARGUMENTS, you should only work on this file as there may be other notebooks in progress.
+Create a new educational Jupyter notebook on the topic: $ARGUMENTS, you should only work on this file as there may be other notebooks in progress. Keep in mind that I am preparing for a quantitative trading interview, so please explain the concepts as clearly as possible, even better, remind me whenever you think a certain concept is frequently tested in quant interviews.
 
 ## Goal
+
+Keep in mind that I am preparing for a quantitative trading interview, so please explain the concepts as clearly as possible, even better, remind me whenever you think a certain concept is frequently tested in quant interviews.
 
 Build a self-contained, beginner-friendly notebook that teaches `$ARGUMENTS` from first principles using math, code, and visualizations. The structure and content must be driven by what makes sense for the topic — not forced into a fixed template. When explaining mathematical concepts, use the same tone and style as Youtuber Statquest or 3Blue1Brown.
 
@@ -33,6 +35,12 @@ Also, when writing math equations, please add intuitive explanations or analogie
 - Split logically: one cell per concern (define → dataset → train → evaluate → plot)
 - Training loops must record a `loss_history` list
 - Print learned parameters and key metrics after training
+- The libraries you have access to are:
+  "jupyter",
+  "matplotlib",
+  "nbformat",
+  "numpy",
+  "scikit-learn",
 
 ### Plots
 

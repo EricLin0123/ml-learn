@@ -1,0 +1,186 @@
+<svg viewBox="0 0 1040 1640" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue',Arial,'PingFang TC','Microsoft JhengHei',sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#475569"/>
+    </marker>
+    <marker id="arrowHot" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#dc2626"/>
+    </marker>
+    <style>
+      .band { rx:14; }
+      .ph0{fill:#eef2ff;stroke:#c7d2fe} .ph1{fill:#ecfeff;stroke:#a5f3fc}
+      .ph2{fill:#fef2f2;stroke:#fecaca} .ph3{fill:#f0fdf4;stroke:#bbf7d0}
+      .ph4{fill:#fffbeb;stroke:#fde68a} .ph5{fill:#faf5ff;stroke:#e9d5ff}
+      .ph6{fill:#f8fafc;stroke:#e2e8f0} .cs{fill:#f1f5f9;stroke:#cbd5e1}
+      .phaseTitle{font-size:18px;font-weight:700;fill:#1e293b}
+      .phaseTag{font-size:12px;fill:#64748b}
+      .chip{fill:#ffffff;stroke:#cbd5e1;rx:8}
+      .chipTxt{font-size:13px;fill:#334155}
+      .hotchip{fill:#fee2e2;stroke:#dc2626}
+      .hotTxt{font-size:13px;font-weight:700;fill:#b91c1c}
+      .flow{stroke:#94a3b8;stroke-width:2;fill:none}
+      .hot{stroke:#dc2626;stroke-width:2.5;fill:none}
+      .title{font-size:24px;font-weight:800;fill:#0f172a}
+      .sub{font-size:13px;fill:#64748b}
+      .note{font-size:11px;fill:#dc2626;font-style:italic}
+    </style>
+  </defs>
+
+  <text x="40" y="44" class="title">量化面試｜統計・機器學習・時間序列 學習時序路徑圖</text>
+  <text x="40" y="68" class="sub">由上而下 = 學習順序。紅色鏈條代表「必須先學前置知識」的強依賴。右側 CS 軌道可平行進行。</text>
+
+  <!-- main flow spine -->
+  <line x1="120" y1="100" x2="120" y2="1560" class="flow"/>
+
+  <!-- PHASE 0 -->
+  <rect x="40" y="100" width="740" height="150" class="band ph0" rx="14"/>
+  <text x="60" y="128" class="phaseTitle">階段 0｜數學地基（先複習，是一切的根）</text>
+  <rect x="60" y="148" width="210" height="80" class="chip" rx="8"/>
+  <text x="75" y="178" class="chipTxt">線性代數</text>
+  <text x="75" y="198" class="chipTxt" font-size="11">Rank・SVD・特徵分解</text>
+  <text x="75" y="214" class="chipTxt" font-size="11">投影・(半)正定矩陣</text>
+  <rect x="290" y="148" width="210" height="80" class="chip" rx="8"/>
+  <text x="305" y="178" class="chipTxt">多變量微積分</text>
+  <text x="305" y="198" class="chipTxt" font-size="11">梯度・Hessian</text>
+  <text x="305" y="214" class="chipTxt" font-size="11">Lagrange 乘數</text>
+  <rect x="520" y="148" width="240" height="80" class="chip" rx="8"/>
+  <text x="535" y="178" class="chipTxt">機率基礎</text>
+  <text x="535" y="198" class="chipTxt" font-size="11">分布・密度函數・MGF</text>
+  <text x="535" y="214" class="chipTxt" font-size="11">指數族・無記憶性・CLT</text>
+
+  <!-- PHASE 1 -->
+  <rect x="40" y="280" width="740" height="150" class="band ph1" rx="14"/>
+  <text x="60" y="308" class="phaseTitle">階段 1｜統計推論核心</text>
+  <rect x="60" y="328" width="170" height="80" class="chip" rx="8"/>
+  <text x="75" y="356" class="chipTxt">估計與 MLE</text>
+  <text x="75" y="376" class="chipTxt" font-size="11">點/區間估計・CI</text>
+  <rect x="248" y="328" width="170" height="80" class="chip" rx="8"/>
+  <text x="263" y="356" class="chipTxt">估計量性質</text>
+  <text x="263" y="376" class="chipTxt" font-size="11">偏誤/效率/一致/充分</text>
+  <rect x="436" y="328" width="170" height="80" class="chip" rx="8"/>
+  <text x="451" y="356" class="chipTxt">假設檢定</text>
+  <text x="451" y="376" class="chipTxt" font-size="11">p值・Type I・檢定力</text>
+  <text x="451" y="392" class="chipTxt" font-size="11">多重比較・順序統計量</text>
+  <rect x="624" y="328" width="136" height="80" class="chip" rx="8"/>
+  <text x="639" y="356" class="chipTxt">多元常態</text>
+  <text x="639" y="376" class="chipTxt" font-size="11">Multinomial</text>
+
+  <!-- PHASE 2 -->
+  <rect x="40" y="460" width="740" height="210" class="band ph2" rx="14"/>
+  <text x="60" y="488" class="phaseTitle">階段 2｜貝氏推論與隨機模擬</text>
+  <rect x="60" y="508" width="160" height="64" class="chip" rx="8"/>
+  <text x="75" y="535" class="chipTxt">頻率 vs 貝氏</text>
+  <text x="75" y="554" class="chipTxt" font-size="11">貝氏定理・共軛先驗</text>
+  <rect x="238" y="508" width="150" height="64" class="chip" rx="8"/>
+  <text x="253" y="535" class="chipTxt">Bootstrap</text>
+  <text x="253" y="554" class="chipTxt" font-size="11">重抽樣</text>
+  <rect x="406" y="508" width="160" height="64" class="chip" rx="8"/>
+  <text x="421" y="535" class="chipTxt">隨機變數生成</text>
+  <text x="421" y="554" class="chipTxt" font-size="11">Acceptance-Rejection</text>
+  <rect x="584" y="508" width="176" height="64" class="chip" rx="8"/>
+  <text x="599" y="535" class="chipTxt">隨機過程</text>
+  <text x="599" y="554" class="chipTxt" font-size="11">鞅・隨機微積分</text>
+
+  <!-- hot chain: Markov -> MCMC -> M-H -->
+  <rect x="60" y="592" width="150" height="56" class="hotchip" rx="8"/>
+  <text x="135" y="624" text-anchor="middle" class="hotTxt">Markov Chain</text>
+  <rect x="300" y="592" width="150" height="56" class="hotchip" rx="8"/>
+  <text x="375" y="624" text-anchor="middle" class="hotTxt">MCMC</text>
+  <rect x="540" y="592" width="220" height="56" class="hotchip" rx="8"/>
+  <text x="650" y="624" text-anchor="middle" class="hotTxt">Metropolis-Hastings</text>
+  <path d="M210,620 L298,620" class="hot" marker-end="url(#arrowHot)"/>
+  <path d="M450,620 L538,620" class="hot" marker-end="url(#arrowHot)"/>
+  <text x="60" y="664" class="note">必學前置：Markov Chain → MCMC → M-H，缺一不可</text>
+
+  <!-- PHASE 3 -->
+  <rect x="40" y="700" width="740" height="150" class="band ph3" rx="14"/>
+  <text x="60" y="728" class="phaseTitle">階段 3｜機器學習基礎</text>
+  <rect x="60" y="748" width="150" height="80" class="chip" rx="8"/>
+  <text x="75" y="776" class="chipTxt">線性迴歸</text>
+  <text x="75" y="796" class="chipTxt" font-size="11">投影視角・OLS</text>
+  <rect x="228" y="748" width="150" height="80" class="chip" rx="8"/>
+  <text x="243" y="776" class="chipTxt">Ridge / Lasso</text>
+  <text x="243" y="796" class="chipTxt" font-size="11">正則化・Logistic</text>
+  <rect x="396" y="748" width="170" height="80" class="chip" rx="8"/>
+  <text x="411" y="776" class="chipTxt">偏差-變異權衡</text>
+  <text x="411" y="796" class="chipTxt" font-size="11">交叉驗證</text>
+  <rect x="584" y="748" width="176" height="80" class="chip" rx="8"/>
+  <text x="599" y="776" class="chipTxt">資料前處理</text>
+  <text x="599" y="796" class="chipTxt" font-size="11">特徵工程・離群值</text>
+  <text x="599" y="812" class="chipTxt" font-size="11">分類・分群</text>
+
+  <!-- PHASE 4 -->
+  <rect x="40" y="880" width="740" height="180" class="band ph4" rx="14"/>
+  <text x="60" y="908" class="phaseTitle">階段 4｜進階機器學習（與你的工作最相關）</text>
+  <rect x="60" y="928" width="160" height="64" class="chip" rx="8"/>
+  <text x="75" y="955" class="chipTxt">Bagging / Boosting</text>
+  <text x="75" y="974" class="chipTxt" font-size="11">XGBoost・LightGBM</text>
+  <rect x="238" y="928" width="150" height="64" class="chip" rx="8"/>
+  <text x="253" y="955" class="chipTxt">EM 演算法</text>
+  <text x="253" y="974" class="chipTxt" font-size="11">Kalman Filter</text>
+  <rect x="406" y="928" width="150" height="64" class="chip" rx="8"/>
+  <text x="421" y="955" class="chipTxt">降維</text>
+  <text x="421" y="974" class="chipTxt" font-size="11">PCA・因子・AE</text>
+  <rect x="574" y="928" width="186" height="64" class="chip" rx="8"/>
+  <text x="589" y="955" class="chipTxt">神經網路</text>
+  <text x="589" y="974" class="chipTxt" font-size="11">反向傳播・梯度消失</text>
+  <rect x="238" y="1004" width="318" height="44" class="hotchip" rx="8"/>
+  <text x="397" y="1031" text-anchor="middle" class="hotTxt">Sequential Models → Self-Attention → Transformer</text>
+  <text x="574" y="1024" class="note">前置：NN + 序列模型</text>
+  <text x="574" y="1040" class="note">→ 注意力 → Transformer</text>
+
+  <!-- PHASE 5 -->
+  <rect x="40" y="1090" width="740" height="120" class="band ph5" rx="14"/>
+  <text x="60" y="1118" class="phaseTitle">階段 5｜時間序列</text>
+  <rect x="60" y="1138" width="200" height="52" class="chip" rx="8"/>
+  <text x="75" y="1170" class="chipTxt">定態・隨機漫步・季節性</text>
+  <rect x="278" y="1138" width="200" height="52" class="chip" rx="8"/>
+  <text x="293" y="1170" class="chipTxt">ARMA</text>
+  <rect x="496" y="1138" width="264" height="52" class="hotchip" rx="8"/>
+  <text x="628" y="1170" text-anchor="middle" class="hotTxt">異質變異 → GARCH</text>
+
+  <!-- PHASE 6 -->
+  <rect x="40" y="1240" width="740" height="180" class="band ph6" rx="14"/>
+  <text x="60" y="1268" class="phaseTitle">階段 6｜最佳化與金融應用（終點：Alpha 研究）</text>
+  <rect x="60" y="1288" width="160" height="64" class="chip" rx="8"/>
+  <text x="75" y="1315" class="chipTxt">最佳化</text>
+  <text x="75" y="1334" class="chipTxt" font-size="11">LP・Lagrange・KKT</text>
+  <rect x="238" y="1288" width="170" height="64" class="chip" rx="8"/>
+  <text x="253" y="1315" class="chipTxt">投資組合理論</text>
+  <text x="253" y="1334" class="chipTxt" font-size="11">均值-變異・效率前緣</text>
+  <rect x="426" y="1288" width="150" height="64" class="chip" rx="8"/>
+  <text x="441" y="1315" class="chipTxt">資產定價</text>
+  <text x="441" y="1334" class="chipTxt" font-size="11">CAPM・Fama-MacBeth</text>
+  <rect x="594" y="1288" width="166" height="64" class="chip" rx="8"/>
+  <text x="609" y="1315" class="chipTxt">Black-Scholes</text>
+  <text x="609" y="1334" class="chipTxt" font-size="11">需隨機微積分</text>
+  <rect x="238" y="1364" width="338" height="44" class="chip" rx="8" fill="#fef9c3" stroke="#facc15"/>
+  <text x="407" y="1391" text-anchor="middle" class="chipTxt" font-weight="700">Alpha / 因子探索流程（綜合應用）</text>
+
+  <!-- main downward arrows -->
+  <path d="M120,250 L120,278" class="flow" marker-end="url(#arrow)"/>
+  <path d="M120,430 L120,458" class="flow" marker-end="url(#arrow)"/>
+  <path d="M120,670 L120,698" class="flow" marker-end="url(#arrow)"/>
+  <path d="M120,850 L120,878" class="flow" marker-end="url(#arrow)"/>
+  <path d="M120,1060 L120,1088" class="flow" marker-end="url(#arrow)"/>
+  <path d="M120,1210 L120,1238" class="flow" marker-end="url(#arrow)"/>
+
+  <!-- CS parallel track -->
+  <rect x="810" y="100" width="200" height="1320" class="band cs" rx="14"/>
+  <text x="830" y="128" class="phaseTitle" font-size="16">平行軌道</text>
+  <text x="830" y="150" class="phaseTag">CS／工程（隨時可練）</text>
+  <rect x="830" y="170" width="160" height="60" class="chip" rx="8"/>
+  <text x="845" y="198" class="chipTxt">資料結構</text>
+  <text x="845" y="218" class="chipTxt" font-size="11">List/Tree/Graph...</text>
+  <rect x="830" y="246" width="160" height="60" class="chip" rx="8"/>
+  <text x="845" y="274" class="chipTxt">演算法</text>
+  <text x="845" y="294" class="chipTxt" font-size="11">DP・DFS/BFS・二分搜</text>
+  <rect x="830" y="322" width="160" height="50" class="chip" rx="8"/>
+  <text x="845" y="352" class="chipTxt">OOP 概念</text>
+  <rect x="830" y="388" width="160" height="50" class="chip" rx="8"/>
+  <text x="845" y="418" class="chipTxt">SQL 實務語法</text>
+  <text x="830" y="470" class="phaseTag" font-size="12">Leetcode</text>
+  <text x="830" y="490" class="phaseTag" font-size="12">Medium~Hard</text>
+  <text x="830" y="510" class="phaseTag" font-size="12">每天穩定刷題,</text>
+  <text x="830" y="528" class="phaseTag" font-size="12">不必等統計學完。</text>
+</svg>

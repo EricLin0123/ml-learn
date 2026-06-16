@@ -41,6 +41,7 @@ Also, when writing math equations, please add intuitive explanations or analogie
   "nbformat",
   "numpy",
   "scikit-learn",
+  "ipympl" used by "%matplotlib ipympl" for interactive plots
 
 ### Plots
 
